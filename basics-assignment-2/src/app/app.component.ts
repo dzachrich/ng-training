@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   username = 'this_user';
   isBlank() {
-    return (this.username && this.username.length > 0);
+    return !(this.username && this.username.length > 0);
   }
   resetUsername() {
     this.username = '';
